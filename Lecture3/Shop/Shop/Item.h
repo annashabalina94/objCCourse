@@ -13,13 +13,13 @@
 @property(nonatomic, assign)NSNumber *cost;
 @property(nonatomic, assign)NSNumber *availableNumber;
 @property(nonatomic, strong)NSString *manufacturer;
-@property(nonatomic, assign)NSNumber *hasDiscount;
 @property(nonatomic, assign)NSDate *date;
+@property (nonatomic, assign) BOOL *hasDiscount;
+@property (nonatomic, assign) NSDate *dateOfManufacture;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
 - (NSString *)itemDescription;
 
-+(Item*)defaultItem;
 
 @end
